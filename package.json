@@ -1,5 +1,6 @@
 {
   "name": "sell-smart",
+  "homepage": "https://webdev408.github.io/Fresh-fruit-shopping/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,6 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "preview": "vite preview"
   },
   "dependencies": {
